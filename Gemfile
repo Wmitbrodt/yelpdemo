@@ -15,6 +15,8 @@ gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'mini_magick', '~> 4.5', '>= 4.5.1'
 gem 'devise', '~> 4.2'
 gem 'searchkick', '~> 1.3', '>= 1.3.1'
+gem 'will_paginate',           '3.1.0'
+gem 'bootstrap-will_paginate', '0.0.10'
 
 group :development, :test do
   gem 'sqlite3', '1.3.11'
