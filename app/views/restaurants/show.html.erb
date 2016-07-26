@@ -77,8 +77,10 @@
     </div>
   </div>
 
-<%= link_to 'Edit', edit_restaurant_path(@restaurant), class: "btn btn-link" %> |
-<%= link_to 'Back', restaurants_path, class: "btn btn-link" %>
+<% if user_signed_in? && current_user.admin? %>
+  <%= link_to 'Edit', edit_restaurant_path(@restaurant), class: "btn btn-link" %> |
+  <%= link_to 'Back', restaurants_path, class: "btn btn-link" %>
+<% end %>
 
 <script>
   $('.star-rating').raty({
